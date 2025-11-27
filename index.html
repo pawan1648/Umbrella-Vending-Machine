@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="machine-container">
+    <h1>☔ Umbrella Vending Machine</h1>
+
+    <div class="product-display">
+        <p class="price">₹120</p>
+    </div>
+
+    <div class="options">
+        <button class="btn" onclick="pay('card')">Pay With Card</button>
+        <button class="btn" onclick="pay('cash')">Pay With Cash</button>
+    </div>
+
+    <div id="status" class="status">Awaiting Payment...</div>
+
+    <button id="dispenseBtn" class="dispense-btn" onclick="dispense()" disabled>
+        Dispense Umbrella
+    </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
