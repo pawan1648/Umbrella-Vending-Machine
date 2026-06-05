@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Vending Machine</title>
+
+    <link rel="stylesheet" href="B.css">
+</head>
+
+<body>
+
+<div class="machine">
+
+    <h1>Smart Vending Machine</h1>
+
+    <div class="display">
+        <h2 id="status">Select Product</h2>
+    </div>
+
+    <div class="products">
+
+        <div class="item">
+            <h3>1️⃣ Umbrella</h3>
+            <p>₹120</p>
+        </div>
+
+        <div class="item">
+            <h3>2️⃣ Raincoat</h3>
+            <p>₹250</p>
+        </div>
+
+    </div>
+    <button onclick="selectProduct(1)">
+        Select 1
+    </button>
+
+    <button onclick="selectProduct(2)">
+        Select 2
+    </button>
+
+    <div class="quantity">
+
+        <h3>Quantity</h3>
+
+        <button onclick="changeQty(-1)">
+            -
+        </button>
+
+        <span id="qty">
+            0
+        </span>
+
+        <button onclick="changeQty(1)">
+            +
+        </button>
+
+        <h3 id="total">
+            ₹0
+        </h3>
+
+    </div>
+
+    <h3>Payment Options</h3>
+
+    <button onclick="payQR()">
+        Pay with QR
+    </button>
+
+    <button onclick="showCard()">
+        Pay with Card
+    </button>
+
+    <img id="qrImage"
+         src=""
+         width="180">
+
+    <button onclick="qrSuccess()">
+        QR Payment Done
+    </button>
+
+    <input type="text"
+           id="card"
+           placeholder="Card Number">
+
+    <input type="text"
+           id="expiry"
+           placeholder="MM/YY">
+
+    <input type="password"
+           id="cvv"
+           placeholder="CVV">
+
+    <button onclick="cardPay()">
+        Card Payment Done
+    </button>
+
+    <button id="dispenseBtn"
+            onclick="dispense()"
+            disabled>
+        Dispense Product
+    </button>
+
+</div>
+
+<script src="C.js"></script>
+
+</body>
+</html>
