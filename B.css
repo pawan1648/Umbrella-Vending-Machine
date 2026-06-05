@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #1f2937;
+    font-family: Arial;
+}
+
+.machine {
+    width: 80%;
+    min-height: 95vh;
+    overflow-y: auto;
+    background: #111827;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.display {
+    background: black;
+    color: #00ff00;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.item {
+    background: #374151;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background: gray;
+}
+
+.quantity {
+    margin-top: 15px;
+}
+
+.quantity button {
+    width: 60px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.quantity span {
+    font-size: 22px;
+    margin: 0 15px;
+}
+
+#total {
+    margin-top: 10px;
+    color: #00ff00;
+}
+
+input {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+img {
+    margin-top: 15px;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+}
